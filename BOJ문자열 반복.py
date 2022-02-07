@@ -1,7 +1,7 @@
 n = int(input())
-
 for i in range(n):
-    repeat = int(input())
-    S = input()
+    repeat, S = input().split()
+    List = []
     for j in S:
-        print(j, end="")*3
+        List.append(j*int(repeat))
+    print(*List, sep="")
